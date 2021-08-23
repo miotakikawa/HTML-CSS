@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-nox;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,10 +21,6 @@ main{
   padding: 10px;
   position: relative;
   background-color: #eee;
-}
-
-.step-box:last-child {
-  margin-right: 0;
 }
 
 .step-img1 {
@@ -65,3 +61,26 @@ footer {
   height: 50px;
   background-color: #aaa;
 }
+
+@media screen and (max-width:768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+  }
+
+  .step-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+}
+
+
